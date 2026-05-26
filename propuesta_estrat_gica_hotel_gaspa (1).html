@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Estratégica: Hotel Gaspa x Vertical</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom styled range inputs for warm mountain theme */
+        input[type="range"]::-webkit-slider-thumb {
+            background: #b45309;
+        }
+    </style>
+</head>
+<body class="bg-[#FAF8F5] text-stone-800 antialiased overflow-x-hidden">
+
+    <!-- Top Agency Bar (Warm Alpine Gold) -->
+    <div class="bg-amber-100/60 border-b border-amber-200/50 py-2 px-4 text-center text-xs font-semibold tracking-wider text-amber-800 flex flex-col sm:flex-row justify-between items-center max-w-7xl mx-auto rounded-b-xl gap-2">
+        <span class="flex items-center gap-1.5"><i data-lucide="compass" class="w-4 h-4 text-amber-700"></i> PROPUESTA ESTRATÉGICA EXCLUSIVA: HOTEL GASPA (ORDINO, ANDORRA)</span>
+        <a href="https://somvertical.ad/" target="_blank" class="hover:underline flex items-center gap-1 text-stone-700 hover:text-amber-800 transition-colors">
+            somvertical.ad <i data-lucide="external-link" class="w-3 h-3"></i>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#FAF8F5]/90 backdrop-blur-md border-b border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <!-- Vertical Brand Emblem - Warm Terracotta Forest tone -->
+                    <div class="h-10 w-10 bg-amber-700 rounded-xl flex items-center justify-center font-bold text-white text-xl tracking-tighter shadow-sm">
+                        V
+                    </div>
+                    <div>
+                        <span class="text-lg font-bold tracking-tight text-stone-900 block leading-tight">VERTICAL</span>
+                        <span class="text-[9px] text-amber-700 tracking-widest uppercase block">Andorra Digital</span>
+                    </div>
+                </div>
+                <div class="hidden lg:flex items-center gap-6 text-xs font-semibold uppercase tracking-wider text-stone-600">
+                    <a href="#diagnostico" class="hover:text-amber-700 transition-colors">Diagnóstico</a>
+                    <a href="#auditoria-campo" class="hover:text-amber-700 transition-colors">Investigación de Campo</a>
+                    <a href="#solucion" class="hover:text-amber-700 transition-colors">Estrategias</a>
+                    <a href="#alianzas" class="hover:text-amber-700 transition-colors">Sinergias</a>
+                    <a href="#roi" class="hover:text-amber-700 transition-colors">Calculadora ROI</a>
+                </div>
+                <div>
+                    <a href="#contacto" class="bg-emerald-800 hover:bg-emerald-900 text-white px-5 py-2.5 rounded-lg text-xs font-bold tracking-wider uppercase transition-all shadow-md shadow-emerald-800/10 block text-center">
+                        Auditoría Presencial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-32 bg-gradient-to-b from-amber-50/50 via-transparent to-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+                
+                <!-- Text intro -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-amber-600 animate-pulse"></span>
+                        Estudio de Campo en Ordino • Temporada 2026
+                    </div>
+                    <h1 class="serif-font text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-stone-900 leading-tight">
+                        La esencia de Ordino es acogedora. Tu presencia digital <span class="italic text-amber-800 decoration-amber-600/30 underline">también debería serlo.</span>
+                    </h1>
+                    <p class="text-stone-600 text-base sm:text-lg leading-relaxed max-w-xl">
+                        El Hotel Gaspa es un rincón único de hospitalidad y gastronomía andorrana. Sin embargo, nuestro análisis de campo demuestra que hoy es digitalmente invisible, lo que empuja a los clientes hacia otros alojamientos de la zona.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="#auditoria-campo" class="bg-amber-700 hover:bg-amber-800 text-white font-semibold px-8 py-4 rounded-xl text-center transition-all flex items-center justify-center gap-2 text-sm shadow-md">
+                            Ver Investigación de Campo <i data-lucide="search" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#roi" class="bg-white hover:bg-stone-100 text-stone-800 border border-stone-200 font-semibold px-8 py-4 rounded-xl text-center transition-all flex items-center justify-center gap-2 text-sm shadow-sm">
+                            Calculadora de Pérdidas <i data-lucide="calculator" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Featured Cozy Card / Mini Audit Visual -->
+                <div class="lg:col-span-5 mt-12 lg:mt-0">
+                    <div class="bg-white p-8 rounded-2xl border border-stone-200/80 shadow-xl relative">
+                        <div class="absolute -top-3 right-6 bg-amber-700 text-white text-[10px] px-3.5 py-1 rounded-full font-bold uppercase tracking-wider shadow-sm">
+                            Auditoría de Canales
+                        </div>
+                        <div class="flex items-center justify-between border-b border-stone-100 pb-4 mb-4">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                            </div>
+                            <span class="text-xs text-stone-400 font-medium">Salud Digital: Hotel Gaspa</span>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span class="text-stone-600">Ficha de Google & Maps</span>
+                                    <span class="text-amber-700 font-bold">Incompleta (Sin restaurante destacado)</span>
+                                </div>
+                                <div class="w-full bg-stone-100 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-amber-600 h-full rounded-full" style="width: 45%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span class="text-stone-600">Redes Sociales (IG/FB)</span>
+                                    <span class="text-red-600 font-bold">Inactivo (Último post > 12 meses)</span>
+                                </div>
+                                <div class="w-full bg-stone-100 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-red-500 h-full rounded-full" style="width: 15%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span class="text-stone-600">Visibilidad en TripAdvisor</span>
+                                    <span class="text-yellow-600 font-bold">Desatendida (Preguntas sin responder)</span>
+                                </div>
+                                <div class="w-full bg-stone-100 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-yellow-500 h-full rounded-full" style="width: 35%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-5 border-t border-stone-100 space-y-3">
+                            <p class="text-xs text-stone-500 italic leading-relaxed">
+                                "El Hotel Gaspa tiene un encanto familiar magnífico y una cocina de montaña excelente, pero el cliente que busca esquí, rutas ciclistas o gastronomía en Ordino no los localiza online."
+                            </p>
+                            <div class="flex items-center gap-3 pt-1">
+                                <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800 text-xs font-bold">V</div>
+                                <div>
+                                    <p class="text-xs font-bold text-stone-800">Vertical Strategy Team</p>
+                                    <p class="text-[10px] text-stone-400">somvertical.ad • Andorra</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- The Problem & Diagnostic (Auditoría de Vacíos) -->
+    <section id="diagnostico" class="py-16 bg-[#F4F1EA] border-y border-stone-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-amber-800 text-xs font-bold tracking-widest uppercase block mb-2">Fugas de Reserva Detectadas</span>
+                <h2 class="serif-font text-3xl sm:text-4xl font-semibold text-stone-950">¿Qué canales estamos descuidando?</h2>
+                <p class="text-stone-600 mt-4 text-sm sm:text-base">
+                    No se trata solo de tener una web bonita; se trata de estar presente y ser la primera opción atractiva en todo el trayecto de reserva del turista que visita el Principado.
+                </p>
+            </div>
+
+            <!-- Issues Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- issue 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-stone-200/60 shadow-sm relative group hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-700 mb-6">
+                        <i data-lucide="hotel" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-lg mb-3">Ausencia de Motor de Reservas</h3>
+                    <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        Tener que llamar por teléfono o rellenar un formulario de contacto estático frena la compra impulsiva del esquiador o senderista que quiere asegurar su noche de hotel ya mismo.
+                    </p>
+                    <div class="bg-red-50 text-red-700 px-3 py-1.5 rounded-lg text-xs font-semibold inline-flex items-center gap-1.5">
+                        <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i> 80% de abandono en la web actual.
+                    </div>
+                </div>
+
+                <!-- issue 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-stone-200/60 shadow-sm relative group hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-700 mb-6">
+                        <i data-lucide="message-square" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-lg mb-3">TripAdvisor Desconectado</h3>
+                    <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        El restaurante tiene un potencial gastronómico espectacular, pero no incentivamos activamente que los clientes locales y turistas dejen feedback físico inmediato.
+                    </p>
+                    <div class="bg-red-50 text-red-700 px-3 py-1.5 rounded-lg text-xs font-semibold inline-flex items-center gap-1.5">
+                        <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i> Calificaciones estancadas.
+                    </div>
+                </div>
+
+                <!-- issue 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-stone-200/60 shadow-sm relative group hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-amber-700 mb-6">
+                        <i data-lucide="link-2-off" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-lg mb-3">Dependencia de OTAs</h3>
+                    <p class="text-stone-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        Aparecer en plataformas masivas de Andorra de forma pasiva liquida tus márgenes. Necesitamos una presencia activa y optimizada para vender packs de alojamiento y forfait.
+                    </p>
+                    <div class="bg-red-50 text-red-700 px-3 py-1.5 rounded-lg text-xs font-semibold inline-flex items-center gap-1.5">
+                        <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i> Margen perdido frente a intermediarios.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Field Investigation (Investigación de Campo Detallada) -->
+    <section id="auditoria-campo" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-800 text-xs font-bold tracking-widest uppercase bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 inline-block mb-2">Auditoría Realizada</span>
+                <h2 class="serif-font text-3xl sm:text-4xl font-semibold text-stone-950">Radiografía del Hotel Gaspa: Lo que encontramos</h2>
+                <p class="text-stone-600 mt-4 text-sm sm:text-base">
+                    Hemos analizado activamente vuestros perfiles digitales actuales y de la zona para entender exactamente por qué se están desviando las reservas en Ordino.
+                </p>
+            </div>
+
+            <!-- Interactive Field Investigation Tabs -->
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Channels List (Left Selector) -->
+                <div class="lg:col-span-4 space-y-3">
+                    <button onclick="switchChannel('google')" id="btn-chan-google" class="w-full text-left p-4 rounded-xl border border-stone-200 transition-all flex items-center gap-3 bg-white shadow-sm border-l-4 border-l-amber-700 font-bold text-stone-900">
+                        <span class="p-2 bg-amber-50 text-amber-800 rounded-lg"><i data-lucide="map" class="w-5 h-5"></i></span>
+                        <div>
+                            <p class="text-sm">Ficha Google Business</p>
+                            <p class="text-[11px] text-stone-500 font-normal">Maps e intención de búsqueda local</p>
+                        </div>
+                    </button>
+
+                    <button onclick="switchChannel('instagram')" id="btn-chan-instagram" class="w-full text-left p-4 rounded-xl border border-stone-200/60 transition-all flex items-center gap-3 bg-white text-stone-600 hover:text-stone-900">
+                        <span class="p-2 bg-stone-100 text-stone-600 rounded-lg"><i data-lucide="instagram" class="w-5 h-5"></i></span>
+                        <div>
+                            <p class="text-sm font-semibold">Instagram y Facebook</p>
+                            <p class="text-[11px] text-stone-400 font-normal">Canal de redes y confianza online</p>
+                        </div>
+                    </button>
+
+                    <button onclick="switchChannel('tripadvisor')" id="btn-chan-tripadvisor" class="w-full text-left p-4 rounded-xl border border-stone-200/60 transition-all flex items-center gap-3 bg-white text-stone-600 hover:text-stone-900">
+                        <span class="p-2 bg-stone-100 text-stone-600 rounded-lg"><i data-lucide="star" class="w-5 h-5"></i></span>
+                        <div>
+                            <p class="text-sm font-semibold">Reputación en TripAdvisor</p>
+                            <p class="text-[11px] text-stone-400 font-normal">La voz de los clientes de restaurante</p>
+                        </div>
+                    </button>
+
+                    <button onclick="switchChannel('otas')" id="btn-chan-otas" class="w-full text-left p-4 rounded-xl border border-stone-200/60 transition-all flex items-center gap-3 bg-white text-stone-600 hover:text-stone-900">
+                        <span class="p-2 bg-stone-100 text-stone-600 rounded-lg"><i data-lucide="shopping-bag" class="w-5 h-5"></i></span>
+                        <div>
+                            <p class="text-sm font-semibold">Booking & Esquiades</p>
+                            <p class="text-[11px] text-stone-400 font-normal">La dependencia de intermediarios</p>
+                        </div>
+                    </button>
+
+                    <button onclick="switchChannel('sports')" id="btn-chan-sports" class="w-full text-left p-4 rounded-xl border border-stone-200/60 transition-all flex items-center gap-3 bg-white text-stone-600 hover:text-stone-900">
+                        <span class="p-2 bg-stone-100 text-stone-600 rounded-lg"><i data-lucide="bike" class="w-5 h-5"></i></span>
+                        <div>
+                            <p class="text-sm font-semibold">Wikiloc & Cicloturismo</p>
+                            <p class="text-[11px] text-stone-400 font-normal">Turismo deportivo de montaña</p>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Channel Analysis Detail (Right Pane) -->
+                <div class="lg:col-span-8 bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-sm min-h-[420px] flex flex-col justify-between">
+                    <div id="channel-content" class="space-y-6">
+                        <!-- Content injected via JS dynamically, initially showing Google -->
+                        <div class="flex items-center gap-3 text-amber-800 font-bold text-lg">
+                            <i data-lucide="map" class="w-6 h-6"></i> Ficha Google Business (Google Maps)
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded-xl border border-stone-200">
+                                <span class="text-red-700 bg-red-50 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Hallazgo crítico</span>
+                                <p class="text-stone-700 text-xs sm:text-sm mt-2 leading-relaxed">
+                                    El restaurante de Hotel Gaspa tiene excelentes opiniones culinarias independientes, pero la ficha de Google Business unifica erróneamente el hotel y la cocina sin menús legibles ni fotos de alta definición de los platos rústicos. Además, los horarios de apertura no están actualizados.
+                                </p>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl border border-stone-200">
+                                <span class="text-amber-800 bg-amber-50 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Fuga de ingresos</span>
+                                <p class="text-stone-700 text-xs sm:text-sm mt-2 leading-relaxed">
+                                    Al no tener configurado el botón "Reserva de Habitación" directo en Google Maps, el buscador empuja automáticamente al usuario a las tarifas de Booking.com, cobrándote comisiones sobre clientes que ya te buscaban por tu nombre.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Solution footer inside the card -->
+                    <div id="channel-solution" class="mt-6 pt-5 border-t border-stone-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                        <div>
+                            <span class="text-[10px] uppercase text-emerald-800 bg-emerald-50 px-2 py-1 rounded-md font-bold">La Solución Vertical</span>
+                            <p id="channel-solution-text" class="text-xs text-stone-600 mt-1">Verificación, actualización de menús con códigos QR, fotos profesionales y enlace de reserva directo.</p>
+                        </div>
+                        <a href="#contacto" class="text-xs font-bold text-amber-800 hover:text-amber-900 flex items-center gap-1 shrink-0">
+                            Mejora este canal <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Strategy: Tripadvisor, Alliances & Packages -->
+    <section id="solucion" class="py-20 bg-[#F4F1EA] border-y border-stone-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+                
+                <!-- Strategy Description Left -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-amber-800 text-xs font-bold tracking-widest uppercase block">La Oportunidad Estratégica</span>
+                    <h2 class="serif-font text-3xl sm:text-4xl font-semibold text-stone-950">El Plan de Alianzas y Reputación Local</h2>
+                    <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+                        Andorra no se vende sola con una habitación de hotel. Se vende con la <strong class="text-stone-950 font-semibold">experiencia completa</strong>. Con Vertical vamos a tejer una red de conexiones digitales y físicas para el Hotel Gaspa.
+                    </p>
+
+                    <!-- Core Tactics Accordion / Cards -->
+                    <div class="space-y-4 pt-2">
+                        <!-- Tactic 1 -->
+                        <div class="bg-white p-4 rounded-xl border border-stone-200/80 shadow-sm flex items-start gap-4">
+                            <span class="bg-emerald-100 text-emerald-800 p-2 rounded-lg"><i data-lucide="star" class="w-4 h-4"></i></span>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-sm">TripAdvisor Rep-Booster</h4>
+                                <p class="text-stone-500 text-xs leading-relaxed mt-1">Estrategia física y digital en recepción y comedor para acumular opiniones de 5 estrellas de forma automatizada (QRs dinámicos, incentivos).</p>
+                            </div>
+                        </div>
+
+                        <!-- Tactic 2 -->
+                        <div class="bg-white p-4 rounded-xl border border-stone-200/80 shadow-sm flex items-start gap-4">
+                            <span class="bg-emerald-100 text-emerald-800 p-2 rounded-lg"><i data-lucide="bike" class="w-4 h-4"></i></span>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-sm">Alianzas con Actividades Locales</h4>
+                                <p class="text-stone-500 text-xs leading-relaxed mt-1">Packs cerrados integrados directamente en tu web: "Habitación + Guía de montaña", "Hotel + Alquiler de E-Bikes en Ordino" o accesos preferentes a Caldea.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tactic 3 -->
+                        <div class="bg-white p-4 rounded-xl border border-stone-200/80 shadow-sm flex items-start gap-4">
+                            <span class="bg-emerald-100 text-emerald-800 p-2 rounded-lg"><i data-lucide="ticket" class="w-4 h-4"></i></span>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-sm">Sinergia con Esquiades & Forfait</h4>
+                                <p class="text-stone-500 text-xs leading-relaxed mt-1">Gestión óptima de canales. Paquetizar dinámicamente el hotel con forfaits de Grandvalira / Pal-Arinsal en tu web para competir con rentabilidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Comparison Tool (Cozy & Amene Style) -->
+                <div class="lg:col-span-7 mt-10 lg:mt-0">
+                    <div class="bg-white p-2 rounded-2xl border border-stone-200 shadow-sm">
+                        <!-- Tabs -->
+                        <div class="grid grid-cols-2 gap-1 bg-stone-100/60 p-1.5 rounded-xl text-xs font-semibold">
+                            <button id="tab-actual" onclick="toggleComparison('actual')" class="py-3 rounded-lg transition-all text-center text-amber-900 bg-white shadow-sm">
+                                <span class="flex items-center justify-center gap-2"><i data-lucide="cloud-rain" class="w-3.5 h-3.5"></i> Hotel Gaspa Hoy</span>
+                            </button>
+                            <button id="tab-vertical" onclick="toggleComparison('vertical')" class="py-3 rounded-lg transition-all text-center text-stone-600 hover:text-stone-900">
+                                <span class="flex items-center justify-center gap-2"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-700"></i> Hotel Gaspa + Vertical</span>
+                            </button>
+                        </div>
+
+                        <!-- Content Window -->
+                        <div class="p-6 sm:p-8 min-h-[380px] flex flex-col justify-between">
+                            <!-- Situation Actual content -->
+                            <div id="content-actual" class="space-y-6">
+                                <div class="flex items-center gap-3 text-amber-900 font-semibold text-sm">
+                                    <i data-lucide="alert-triangle" class="w-5 h-5"></i> Pérdida pasiva del huésped moderno:
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="bg-[#FAF8F5] p-4 rounded-xl border border-stone-200">
+                                        <p class="text-[10px] text-amber-800 uppercase tracking-wider font-bold mb-1">TripAdvisor & Google Reviews</p>
+                                        <p class="text-xs sm:text-sm text-stone-600">Las valoraciones excelentes de los comensales se pierden en el aire. No hay un método ágil en mesa para digitalizar la satisfacción de tu cliente.</p>
+                                    </div>
+                                    <div class="bg-[#FAF8F5] p-4 rounded-xl border border-stone-200">
+                                        <p class="text-[10px] text-amber-800 uppercase tracking-wider font-bold mb-1">Esquiadores y Ciclistas</p>
+                                        <p class="text-xs sm:text-sm text-stone-600">Los deportistas buscan "Forfait + Noche de hotel". Al no ofrecerlo en tu web, asumen que deben irse a Esquiades, quedándose el intermediario con el beneficio.</p>
+                                    </div>
+                                    <div class="bg-[#FAF8F5] p-4 rounded-xl border border-stone-200">
+                                        <p class="text-[10px] text-amber-800 uppercase tracking-wider font-bold mb-1">El Entorno de Ordino</p>
+                                        <p class="text-xs sm:text-sm text-stone-600">No hay convenios con escuelas de esquí locales ni guías de montaña. Las familias reservan otras opciones que les resuelven la estancia completa de antemano.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Situation Vertical content -->
+                            <div id="content-vertical" class="space-y-6 hidden">
+                                <div class="flex items-center gap-3 text-emerald-800 font-semibold text-sm">
+                                    <i data-lucide="check-circle" class="w-5 h-5"></i> El ecosistema de venta automatizado:
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="bg-[#FAF8F5] p-4 rounded-xl border border-stone-200">
+                                        <p class="text-[10px] text-emerald-700 uppercase tracking-wider font-bold mb-1">Reputación Impecable</p>
+                                        <p class="text-xs sm:text-sm text-stone-600">Tarjetas físicas con tecnología contactless (NFC) y códigos QR en recepción y comedor. El cliente deja su opinión de 5 estrellas en 4 segundos.</p>
+                                    </div>
+                                    <div class="bg-[#FAF8F5] p-4 rounded-xl border border-stone-200">
+                                        <p class="text-[10px] text-emerald-700 uppercase tracking-wider font-bold mb-1">Packs Web "Hotel + Actividad"</p>
+                                        <p class="text-xs sm:text-sm text-stone-600">Ofreces packs dinámicos: "Fin de semana Ciclista en Vallnord" o "Esquí con encanto", con la opción de añadir el Forfait directamente en la reserva propia.</p>
+                                    </div>
+                                    <div class="bg-[#FAF8F5] p-4 rounded-xl border border-stone-200">
+                                        <p class="text-[10px] text-emerald-700 uppercase tracking-wider font-bold mb-1">Alianzas Digitalizadas</p>
+                                        <p class="text-xs sm:text-sm text-stone-600">Códigos promocionales de colaboración cruzada con empresas locales de Ordino (alquiler de material, guías locales) aumentando el ticket medio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive ROI Calculator -->
+    <section id="roi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <span class="text-amber-800 text-xs font-bold tracking-widest uppercase block mb-2">Simulador de Rentabilidad</span>
+                <h2 class="serif-font text-3xl sm:text-4xl font-semibold text-stone-950">Calcula lo que puedes recuperar con tu propia Web y Canales</h2>
+                <p class="text-stone-600 mt-4 text-sm sm:text-base">
+                    Mira cuánto presupuesto anual se va en comisiones de OTAs que podrías retener directamente si digitalizamos y potenciamos la venta directa con Vertical.
+                </p>
+            </div>
+
+            <!-- Calculator Layout -->
+            <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+                <!-- Sliders Controls (Warm styling) -->
+                <div class="lg:col-span-7 bg-[#FAF8F5] border border-stone-200 p-8 rounded-2xl flex flex-col justify-between space-y-8 shadow-sm">
+                    
+                    <!-- Control 1 -->
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <label for="habitaciones" class="text-sm font-semibold text-stone-700">Habitaciones disponibles</label>
+                            <span class="text-amber-800 font-bold bg-amber-50 px-3 py-1 rounded text-xs border border-amber-200"><span id="val-habitaciones">25</span> habs</span>
+                        </div>
+                        <input type="range" id="habitaciones" min="5" max="100" value="25" class="w-full h-1.5 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-amber-700" oninput="calculateROI()">
+                        <div class="flex justify-between text-[10px] text-stone-400 mt-1">
+                            <span>5</span>
+                            <span>100</span>
+                        </div>
+                    </div>
+
+                    <!-- Control 2 -->
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <label for="precio" class="text-sm font-semibold text-stone-700">Precio medio / noche con Forfait/Pack (€)</label>
+                            <span class="text-amber-800 font-bold bg-amber-50 px-3 py-1 rounded text-xs border border-amber-200"><span id="val-precio">110</span> €</span>
+                        </div>
+                        <input type="range" id="precio" min="50" max="300" value="110" class="w-full h-1.5 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-amber-700" oninput="calculateROI()">
+                        <div class="flex justify-between text-[10px] text-stone-400 mt-1">
+                            <span>50 €</span>
+                            <span>300 €</span>
+                        </div>
+                    </div>
+
+                    <!-- Control 3 -->
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <label for="ocupacion" class="text-sm font-semibold text-stone-700">Ocupación media anual (%)</label>
+                            <span class="text-amber-800 font-bold bg-amber-50 px-3 py-1 rounded text-xs border border-amber-200"><span id="val-ocupacion">65</span> %</span>
+                        </div>
+                        <input type="range" id="ocupacion" min="20" max="100" value="65" class="w-full h-1.5 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-amber-700" oninput="calculateROI()">
+                        <div class="flex justify-between text-[10px] text-stone-400 mt-1">
+                            <span>20%</span>
+                            <span>100%</span>
+                        </div>
+                    </div>
+
+                    <!-- Control 4 -->
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <label for="booking-share" class="text-sm font-semibold text-stone-700">Cuota de venta por intermediarios (Booking, Esquiades, etc.)</label>
+                            <span class="text-amber-800 font-bold bg-amber-50 px-3 py-1 rounded text-xs border border-amber-200"><span id="val-booking-share">80</span> %</span>
+                        </div>
+                        <input type="range" id="booking-share" min="10" max="100" value="80" class="w-full h-1.5 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-amber-700" oninput="calculateROI()">
+                        <div class="flex justify-between text-[10px] text-stone-400 mt-1">
+                            <span>10% (Independiente)</span>
+                            <span>100% (Dependencia total)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results Display Panel (Cozy Sage Green & Terracotta mix) -->
+                <div class="lg:col-span-5 bg-[#1C352D] text-stone-100 p-8 rounded-2xl flex flex-col justify-between shadow-lg relative overflow-hidden">
+                    <div class="absolute -bottom-10 -right-10 text-emerald-900/40 text-[180px] font-bold select-none pointer-events-none">V</div>
+                    
+                    <div class="relative z-10 space-y-4">
+                        <span class="text-[10px] uppercase tracking-widest font-extrabold text-amber-200 bg-white/10 px-3 py-1 rounded-md">Proyección de Venta Directa</span>
+                        <h4 class="serif-font text-2xl font-semibold text-white">Comisiones regaladas</h4>
+                        <p class="text-emerald-100/80 text-xs leading-relaxed">
+                            Esta cantidad representa lo que el Hotel Gaspa deja anualmente en manos de comisiones externas (con una media conservadora del 17%) por no tener un ecosistema de venta directa optimizado.
+                        </p>
+                        
+                        <div class="pt-4">
+                            <span class="text-xs text-stone-300 block">Comisiones Anuales Estimadas:</span>
+                            <span id="display-perdido" class="text-4xl font-semibold tracking-tight text-amber-300 block my-1">
+                                46.220 €
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/5 border border-white/10 p-5 rounded-xl space-y-3 relative z-10 mt-6">
+                        <div class="flex items-center gap-2 text-amber-300 font-bold text-xs">
+                            <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i> OBJETIVO VERTICAL
+                        </div>
+                        <p class="text-[11px] text-stone-300 leading-relaxed">
+                            Atrayendo un 35% de esas reservas de forma directa a través de nuestra estrategia de TripAdvisor, SEO y Packs Locales:
+                        </p>
+                        <div class="flex justify-between items-center pt-2 border-t border-white/10">
+                            <span class="text-xs text-stone-300">Margen neto recuperado:</span>
+                            <span id="display-ahorro" class="text-base font-bold text-emerald-300">+16.177 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (What somvertical.ad does for Gaspa) -->
+    <section id="servicios" class="py-20 bg-[#F4F1EA] border-t border-stone-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-800 text-xs font-bold tracking-widest uppercase block mb-2">Servicios Vertical</span>
+                <h2 class="serif-font text-3xl sm:text-4xl font-semibold text-stone-950">Nuestros pilares para el éxito del Hotel Gaspa</h2>
+                <p class="text-stone-600 mt-4 text-sm sm:text-base">
+                    Aplicamos nuestros servicios exclusivos de <a href="https://somvertical.ad/" target="_blank" class="text-amber-800 hover:underline font-semibold">somvertical.ad</a> diseñados de forma personalizada para la hostelería de montaña.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-xl border border-stone-200/80 hover:border-amber-700/40 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-amber-50 text-amber-700 rounded-lg flex items-center justify-center mb-5 border border-amber-200/40">
+                            <i data-lucide="code" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-stone-900 text-base mb-2">Web Premium & Booking</h3>
+                        <p class="text-stone-500 text-xs leading-relaxed">
+                            Web rústica y elegante, ultrarrápida. Integración completa de un motor de reservas moderno con pasarela de pago para vender packs dinámicos (Noches + Forfaits + Restaurante).
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-stone-200 text-[11px] text-amber-800 font-semibold uppercase tracking-wider">
+                        Venta directa fluida
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-xl border border-stone-200/80 hover:border-amber-700/40 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-amber-50 text-amber-700 rounded-lg flex items-center justify-center mb-5 border border-amber-200/40">
+                            <i data-lucide="compass" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-stone-900 text-base mb-2">TripAdvisor & Google SEO</h3>
+                        <p class="text-stone-500 text-xs leading-relaxed">
+                            Campañas de reputación activa, respuesta inteligente y optimizada de reviews. SEO local avanzado en Andorra para liderar las búsquedas estacionales de esquí y turismo rural.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-stone-200 text-[11px] text-amber-800 font-semibold uppercase tracking-wider">
+                        Líderes locales
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-xl border border-stone-200/80 hover:border-amber-700/40 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-amber-50 text-amber-700 rounded-lg flex items-center justify-center mb-5 border border-amber-200/40">
+                            <i data-lucide="activity" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-stone-900 text-base mb-2">Alianzas de Actividad</h3>
+                        <p class="text-stone-500 text-xs leading-relaxed">
+                            Integración automatizada con partners locales de Andorra. Ofrecemos a tus clientes alquileres de bicis, guías de esquí y spas sin esfuerzos manuales para tu recepción.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-stone-200 text-[11px] text-amber-800 font-semibold uppercase tracking-wider">
+                        Socio local estratégico
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-xl border border-stone-200/80 hover:border-amber-700/40 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-amber-50 text-amber-700 rounded-lg flex items-center justify-center mb-5 border border-amber-200/40">
+                            <i data-lucide="users" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-stone-900 text-base mb-2">Publicidad Segmentada</h3>
+                        <p class="text-stone-500 text-xs leading-relaxed">
+                            Inversión en Google Ads y Meta Ads para captar reservas directas de mercados de proximidad: Cataluña, Aragón, País Vasco y el sur de Francia.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-stone-200 text-[11px] text-amber-800 font-semibold uppercase tracking-wider">
+                        Tráfico de alto valor
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Vertical Section -->
+    <section id="somos-vertical" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-[#FAF8F5] border border-stone-200 rounded-3xl p-8 sm:p-12 shadow-sm relative overflow-hidden">
+                <div class="relative z-10 lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                    
+                    <div class="space-y-6">
+                        <span class="text-amber-800 text-xs font-bold tracking-widest uppercase block">Expertos en Andorra</span>
+                        <h2 class="serif-font text-3xl sm:text-4xl font-semibold text-stone-950">Somos Vertical • Digital Growth Agency</h2>
+                        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+                            Ubicados en el corazón de Andorra, en **Vertical** entendemos las dinámicas de la temporada de invierno, los picos de verano del cicloturismo y cómo funciona la mente del turista que visita Ordino. 
+                        </p>
+                        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+                            Nuestros servicios disponibles en <a href="https://somvertical.ad" target="_blank" class="text-amber-800 hover:underline font-bold">somvertical.ad</a> garantizan una transformación digital de 360 grados, enfocada a que el Hotel Gaspa recupere su rentabilidad directa.
+                        </p>
+                        <div class="pt-2">
+                            <a href="https://somvertical.ad" target="_blank" class="text-amber-800 text-xs font-bold inline-flex items-center gap-1.5 hover:underline">
+                                Visita somvertical.ad <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 lg:mt-0 space-y-6 bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-sm">
+                        <h3 class="font-bold text-stone-900 text-lg">Garantías de trabajar con Vertical</h3>
+                        <div class="space-y-4">
+                            <div class="flex gap-4">
+                                <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0"><i data-lucide="shield-check" class="w-4 h-4"></i></div>
+                                <div>
+                                    <h4 class="font-semibold text-stone-900 text-sm">Transparencia Total</h4>
+                                    <p class="text-stone-500 text-xs leading-relaxed">Sin sorpresas ni comisiones ocultas. Tú eres dueño de tu web, tus perfiles y tus datos de clientes.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0"><i data-lucide="map-pin" class="w-4 h-4"></i></div>
+                                <div>
+                                    <h4 class="font-semibold text-stone-900 text-sm">Soporte Local Continuo</h4>
+                                    <p class="text-stone-500 text-xs leading-relaxed">Subimos a Ordino cuando lo necesites. Nos reunimos, evaluamos y ajustamos la estrategia juntos de forma presencial.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action & Meeting Booking -->
+    <section id="contacto" class="py-20 bg-[#F4F1EA] border-t border-stone-200/50 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-amber-800 text-xs font-bold tracking-widest uppercase block mb-2">Comienza Hoy Mismo</span>
+            <p class="serif-font text-3xl sm:text-4xl font-bold text-stone-900 mb-6">¿Agendamos una consultoría gratuita en Ordino?</p>
+            <p class="text-stone-600 text-sm sm:text-base max-w-xl mx-auto mb-10 leading-relaxed">
+                Queremos invitarte a tomar un café y presentarte un boceto inicial sin coste alguno de la futura web del Hotel Gaspa, mostrando el plan exacto para TripAdvisor y vuestros nuevos paquetes locales.
+            </p>
+
+            <div class="bg-white p-6 sm:p-10 rounded-2xl border border-stone-200/80 text-left max-w-lg mx-auto shadow-xl relative">
+                <!-- Status message box inside app (no alerts) -->
+                <div id="status-message" class="hidden mb-6 p-4 rounded-xl text-xs font-semibold text-center"></div>
+
+                <form id="pitch-form" onsubmit="submitProposalForm(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-[11px] font-semibold text-stone-500 uppercase tracking-wider mb-1">Nombre y Apellidos</label>
+                        <input type="text" id="form-name" required placeholder="Ej. Joan Gaspa" class="w-full bg-white border border-stone-200 rounded-lg py-2.5 px-4 text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:border-amber-700 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-semibold text-stone-500 uppercase tracking-wider mb-1">Email corporativo o teléfono</label>
+                        <input type="text" id="form-email" required placeholder="Ej. info@hotelgaspa.com" class="w-full bg-white border border-stone-200 rounded-lg py-2.5 px-4 text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:border-amber-700 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-semibold text-stone-500 uppercase tracking-wider mb-1">Día de preferencia para reunirnos</label>
+                        <select id="form-date" class="w-full bg-white border border-stone-200 rounded-lg py-2.5 px-4 text-sm text-stone-800 focus:outline-none focus:border-amber-700 transition-colors">
+                            <option value="Esta semana">Esta misma semana en Andorra</option>
+                            <option value="La próxima semana">La próxima semana</option>
+                            <option value="Llamada virtual rápida">Prefiero una llamada virtual (Zoom/Meet)</option>
+                        </select>
+                    </div>
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-6 rounded-lg text-xs tracking-wider uppercase transition-all shadow-md flex items-center justify-center gap-2">
+                            Solicitar Prototipo Inicial Gratuito <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 py-12 text-center text-xs text-stone-400">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <div class="flex justify-center items-center gap-2">
+                <div class="h-6 w-6 bg-amber-700 rounded flex items-center justify-center font-bold text-white text-[11px]">V</div>
+                <span class="font-bold text-white tracking-widest text-[11px]">VERTICAL</span>
+            </div>
+            <p class="max-w-md mx-auto leading-relaxed">© 2026 Vertical Digital Growth • Andorra. Propuesta estratégica de rendimiento digital elaborada para Hotel Gaspa.</p>
+            <p class="text-stone-500">Servicios consultables y presentados desde <a href="https://somvertical.ad/" target="_blank" class="hover:text-amber-500 underline transition-colors">somvertical.ad</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript logic -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Database of detailed field investigation findings
+        const channelData = {
+            google: {
+                title: 'Ficha Google Business (Google Maps)',
+                icon: 'map',
+                bullets: [
+                    {
+                        tag: 'Hallazgo Crítico',
+                        text: 'El restaurante del Hotel Gaspa posee excelentes críticas por sus parrilladas y menú rústico, pero Google unifica erróneamente el hotel y la cocina sin cartas legibles ni enlaces de reserva digital.'
+                    },
+                    {
+                        tag: 'Fuga de ingresos',
+                        text: 'La falta de un botón directo de "Reserva de Habitación" en vuestra propia ficha de Maps desvía al usuario directamente a tarifas comisionadas en Booking.com (hasta un 20% menos de margen para ti).'
+                    }
+                ],
+                solution: 'Optimización SEO local, segregación estratégica de perfiles (Hotel / Restaurante), fotos profesionales de vuestras habitaciones reformadas y vinculación inmediata del motor directo.'
+            },
+            instagram: {
+                title: 'Redes Sociales (Instagram y Facebook)',
+                icon: 'instagram',
+                bullets: [
+                    {
+                        tag: 'Inactividad Prolongada',
+                        text: 'La última publicación en vuestro perfil de Instagram oficial data de hace más de un año. El turista joven (menores de 40 años) asume que el hotel o su restaurante están cerrados temporalmente.'
+                    },
+                    {
+                        tag: 'Oportunidad de Contenido',
+                        text: 'No hay historias destacadas de "Cómo llegar", "Habitaciones", "Menú de Temporada" ni vídeos orgánicos de la calidez de la chimenea o el ambiente familiar del hotel durante el invierno andorrano.'
+                    }
+                ],
+                solution: 'Plan editorial estacional de contenidos (Esquí, BTT, Gastronomía de montaña) y campañas de captación directa de mensajes directos (DM) ofreciendo ventajas exclusivas.'
+            },
+            tripadvisor: {
+                title: 'Reputación en TripAdvisor',
+                icon: 'star',
+                bullets: [
+                    {
+                        tag: 'Preguntas sin Responder',
+                        text: 'Existen preguntas de viajeros extranjeros sobre si el hotel dispone de guarda-esquís o parking adaptado para bicis sin responder desde hace meses. Esto proyecta una imagen de falta de atención.'
+                    },
+                    {
+                        tag: 'Estancamiento de Ranking',
+                        text: 'Aunque las opiniones son mayormente positivas, el volumen de valoraciones se ha ralentizado de forma drástica, bajando vuestro posicionamiento dentro de la oferta de Ordino.'
+                    }
+                ],
+                solution: 'Implementación de sistema contactless (NFC) físico y QRs en recepción y comedor para acumular valoraciones de clientes satisfechos al instante de pagar.'
+            },
+            otas: {
+                title: 'Booking.com & Esquiades',
+                icon: 'shopping-bag',
+                bullets: [
+                    {
+                        tag: 'Pérdida de Margen',
+                        text: 'La gran mayoría de vuestros clientes provienen de paquetes externos que canibalizan vuestro beneficio. El hotel vende camas pero regala el margen que podría financiar vuestras propias mejoras.'
+                    },
+                    {
+                        tag: 'Disparidad tarifaria',
+                        text: 'No se aprovechan las ventajas de ofrecer un precio ligeramente inferior en el canal de venta directa o de regalar un extra como "Desayuno de montaña" para incentivar la web propia.'
+                    }
+                ],
+                solution: 'Motor de reservas directo con gestión inteligente de canales (Channel Manager) y paquetes dinámicos optimizados de Hotel + Forfait propios.'
+            },
+            sports: {
+                title: 'Plataformas Deportivas (Wikiloc & Cicloturismo)',
+                icon: 'bike',
+                bullets: [
+                    {
+                        tag: 'Invisibilidad Deportiva',
+                        text: 'Ordino es la cuna de rutas míticas de ciclismo de carretera (Coll d\'Ordino) y senderismo en Andorra. Sin embargo, el Hotel Gaspa no figura como un establecimiento recomendado "Bike-Friendly" en las plataformas de deportes.'
+                    },
+                    {
+                        tag: 'Pérdida del Cliente de Verano',
+                        text: 'Los perfiles deportivos en Strava o Wikiloc no enlazan al hotel, perdiendo la oportunidad de capturar al turista activo que busca desesperadamente un hotel con guarda-bicis seguro y cocina abundante.'
+                    }
+                ],
+                solution: 'Creación de tracks de Wikiloc propios con inicio/fin en el hotel, alta en portales especializados de cicloturismo y posicionamiento del hotel como centro deportivo.'
+            }
+        };
+
+        // Switch Active Investigation Channel on Click
+        function switchChannel(channelKey) {
+            const data = channelData[channelKey];
+            if (!data) return;
+
+            // Reset borders and font weights of all buttons
+            const channels = ['google', 'instagram', 'tripadvisor', 'otas', 'sports'];
+            channels.forEach(ch => {
+                const btn = document.getElementById(`btn-chan-${ch}`);
+                if (btn) {
+                    btn.className = "w-full text-left p-4 rounded-xl border border-stone-200/60 transition-all flex items-center gap-3 bg-white text-stone-600 hover:text-stone-900";
+                    // Reset icon container bg
+                    btn.querySelector('span').className = "p-2 bg-stone-100 text-stone-600 rounded-lg";
+                }
+            });
+
+            // Set active styles to selected button
+            const activeBtn = document.getElementById(`btn-chan-${channelKey}`);
+            if (activeBtn) {
+                activeBtn.className = "w-full text-left p-4 rounded-xl border border-stone-200 transition-all flex items-center gap-3 bg-white shadow-sm border-l-4 border-l-amber-700 font-bold text-stone-900";
+                activeBtn.querySelector('span').className = "p-2 bg-amber-50 text-amber-800 rounded-lg";
+            }
+
+            // Update Content Area
+            const contentDiv = document.getElementById('channel-content');
+            
+            let bulletsHTML = '';
+            data.bullets.forEach(b => {
+                const tagColorClass = b.tag.includes('Crítico') || b.tag.includes('Inactividad') || b.tag.includes('Invisibilidad') || b.tag.includes('Margen') ? 'text-red-700 bg-red-50' : 'text-amber-800 bg-amber-50';
+                bulletsHTML += `
+                    <div class="bg-white p-4 rounded-xl border border-stone-200">
+                        <span class="${tagColorClass} text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">${b.tag}</span>
+                        <p class="text-stone-700 text-xs sm:text-sm mt-2 leading-relaxed">${b.text}</p>
+                    </div>
+                `;
+            });
+
+            contentDiv.innerHTML = `
+                <div class="flex items-center gap-3 text-amber-800 font-bold text-lg">
+                    <i data-lucide="${data.icon}" class="w-6 h-6"></i> ${data.title}
+                </div>
+                <div class="space-y-4">
+                    ${bulletsHTML}
+                </div>
+            `;
+
+            // Update Solution Text
+            document.getElementById('channel-solution-text').innerText = data.solution;
+
+            // Re-initialize Lucide to render newly injected icons
+            lucide.createIcons();
+        }
+
+        // Comparison Tabs Logic
+        function toggleComparison(tab) {
+            const btnActual = document.getElementById('tab-actual');
+            const btnVertical = document.getElementById('tab-vertical');
+            const contentActual = document.getElementById('content-actual');
+            const contentVertical = document.getElementById('content-vertical');
+
+            if (tab === 'actual') {
+                btnActual.classList.add('bg-white', 'shadow-sm', 'text-amber-900');
+                btnActual.classList.remove('text-stone-600');
+                btnVertical.classList.remove('bg-white', 'shadow-sm', 'text-amber-900');
+                btnVertical.classList.add('text-stone-600');
+                
+                contentActual.classList.remove('hidden');
+                contentVertical.classList.add('hidden');
+            } else {
+                btnVertical.classList.add('bg-white', 'shadow-sm', 'text-amber-900');
+                btnVertical.classList.remove('text-stone-600');
+                btnActual.classList.remove('bg-white', 'shadow-sm', 'text-amber-900');
+                btnActual.classList.add('text-stone-600');
+                
+                contentVertical.classList.remove('hidden');
+                contentActual.classList.add('hidden');
+            }
+        }
+
+        // Interactive ROI Calculator Logic
+        function calculateROI() {
+            const habs = parseInt(document.getElementById('habitaciones').value);
+            const precio = parseInt(document.getElementById('precio').value);
+            const ocupacion = parseInt(document.getElementById('ocupacion').value) / 100;
+            const bookingShare = parseInt(document.getElementById('booking-share').value) / 100;
+
+            // Update range UI
+            document.getElementById('val-habitaciones').innerText = habs;
+            document.getElementById('val-precio').innerText = precio;
+            document.getElementById('val-ocupacion').innerText = ocupacion * 100;
+            document.getElementById('val-booking-share').innerText = bookingShare * 100;
+
+            // Calculations
+            const totalNochesAnuales = 365;
+            const nochesOcupadasTotal = Math.round(habs * totalNochesAnuales * ocupacion);
+            const ingresosAnualesTotales = nochesOcupadasTotal * precio;
+            const reservasPorIntermediario = ingresosAnualesTotales * bookingShare;
+            
+            // Commission estimates (approx. 17% for OTAs/Packages combo)
+            const comisionMedia = 0.17;
+            const comisionPerdida = Math.round(reservasPorIntermediario * comisionMedia);
+
+            // Goal of saving 35% of those commission loss
+            const porcentajeRecuperado = 0.35;
+            const ahorroPotencial = Math.round(comisionPerdida * porcentajeRecuperado);
+
+            // Update DOM Displays
+            document.getElementById('display-perdido').innerText = comisionPerdida.toLocaleString('es-ES') + ' €';
+            document.getElementById('display-ahorro').innerText = '+' + ahorroPotencial.toLocaleString('es-ES') + ' €';
+        }
+
+        // Execute calc on load
+        window.onload = function() {
+            calculateROI();
+        };
+
+        // Form handling inside safety container
+        function submitProposalForm(event) {
+            event.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const email = document.getElementById('form-email').value;
+            const date = document.getElementById('form-date').value;
+            const statusMessage = document.getElementById('status-message');
+
+            statusMessage.classList.remove('hidden', 'bg-emerald-100', 'text-emerald-800');
+            
+            // Simulating API call success
+            statusMessage.classList.add('bg-emerald-100', 'text-emerald-800', 'block');
+            statusMessage.innerHTML = `
+                <p class="font-bold flex items-center justify-center gap-1.5 text-xs sm:text-sm">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-800"></i> ¡Mensaje enviado con éxito, ${name}!
+                </p>
+                <p class="text-[11px] mt-1 text-emerald-950 font-normal">
+                    Nos pondremos en contacto contigo en <strong>${email}</strong> para agendar nuestra reunión presencial en Ordino para: "${date}". ¡Hablemos pronto!
+                </p>
+            `;
+            
+            // Reset form
+            document.getElementById('pitch-form').reset();
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>
